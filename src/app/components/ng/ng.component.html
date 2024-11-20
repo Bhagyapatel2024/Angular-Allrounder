@@ -1,0 +1,49 @@
+<br />
+<div>
+  <button (click)="toggleVisibility()">Toggle Visibility</button>
+  <p *ngIf="isVisible">This text is visible when `isVisible` is true.</p>
+</div>
+
+<br />
+<div>
+  <button (click)="toggleActive()">Toggle Active</button>
+  <p [ngClass]="{ 'active-class': isActive, 'inactive-class': !isActive }">
+    This paragraph has dynamic classes.
+  </p>
+</div>
+
+<br />
+<div>
+  <button (click)="toggleStyles()">Toggle Styles</button>
+  <p
+    [ngStyle]="{
+      'color': isStyled ? 'blue' : 'gray',
+      'font-size': isStyled ? '20px' : '14px',
+      'border': isStyled ? '2px solid blue' : 'none'
+    }"
+  >
+    This paragraph has dynamic styles.
+  </p>
+</div>
+
+<br />
+<div>
+  <button (click)="toggleState()">Toggle State</button>
+  <p
+    [ngClass]="{ 'highlight-class': isHighlighted }"
+    [ngStyle]="{
+      'font-weight': isHighlighted ? 'bold' : 'normal',
+      'background-color': isHighlighted ? 'lightyellow' : 'transparent'
+    }"
+  >
+    This paragraph combines ngClass and ngStyle.
+  </p>
+</div>
+
+<br />
+<div>
+  <button (click)="toggleArrayClasses()">Toggle Array Classes</button>
+  <p [ngClass]="[isPrimary ? 'primary-class' : 'secondary-class', 'common-class']">
+    This paragraph uses array-based ngClass.
+  </p>
+</div>

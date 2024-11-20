@@ -1,0 +1,36 @@
+button {
+    margin-bottom: 10px;
+  }
+  
+  .active-class {
+    color: white;
+    background-color: green;
+    padding: 10px;
+  }
+  
+  .inactive-class {
+    color: black;
+    background-color: red;
+    padding: 10px;
+  }
+  
+  .highlight-class {
+    border: 1px solid orange;
+    padding: 5px;
+  }
+  
+  .primary-class {
+    color: white;
+    background-color: blue;
+  }
+  
+  .secondary-class {
+    color: white;
+    background-color: gray;
+  }
+  
+  .common-class {
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

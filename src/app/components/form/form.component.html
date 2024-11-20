@@ -1,0 +1,52 @@
+<div class="form-container">
+    <h2>Product Management</h2>
+  
+    <!-- Product Name -->
+    <label >Product Name:</label>
+    <input
+      id="productName"
+      [(ngModel)]="productName"
+      placeholder="Enter product name"
+      (input)="validateProductName()"
+      [class.invalid]="!isProductNameValid"
+    />
+    <div *ngIf="!isProductNameValid" class="error-message">
+      Product name is required.
+    </div>
+  
+    <!-- Product Category -->
+    <label>Category:</label>
+    <select id="productCategory" [(ngModel)]="productCategory">
+      <option value="" disabled>Select Category</option>
+      <option *ngFor="let category of categories" [value]="category">
+        {{ category }}
+      </option>
+    </select>
+  
+    <!-- Product Price -->
+    <label>Price (USD):</label>
+    <input
+      id="productPrice"
+      type="number"
+      [(ngModel)]="productPrice"
+      placeholder="Enter product price"
+    />
+  
+    <!-- Product Availability -->
+    <div class="toggle">
+      <label>
+        <input type="checkbox" [(ngModel)]="isAvailable" />
+        Product Available
+      </label>
+    </div>
+  
+    <!-- Display Entered Details -->
+    <div class="details">
+      <h3>Product Details</h3>
+      <p><strong>Name:</strong> {{ productName || 'N/A' }}</p>
+      <p><strong>Category:</strong> {{ productCategory || 'N/A' }}</p>
+      <p><strong>Price:</strong> ${{ productPrice || 'N/A' }}</p>
+      <p><strong>Availability:</strong> {{ isAvailable ? 'In Stock' : 'Out of Stock' }}</p>
+    </div>
+  </div>
+  

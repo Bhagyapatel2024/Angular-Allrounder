@@ -1,0 +1,102 @@
+<div class="container">
+    <h1>Angular Concepts</h1>
+
+    <div class="concept">
+      <h2>What is Angular?</h2>
+      <p>
+        Angular is an open-source, TypeScript-based framework developed by Google. It is used to build 
+        single-page web applications (SPAs) with features like reusable components, two-way data binding, 
+        dependency injection, and routing.
+      </p>
+    </div>
+
+    <div class="concept">
+      <h3>1. Modules</h3>
+      <p>
+        Modules are the building blocks of Angular applications. The root module (`AppModule`) serves as the 
+        entry point for the app.
+      </p>
+      <ul>
+        <li>Organize the application into cohesive blocks of functionality.</li>
+        <li>Import Angular libraries like `FormsModule` or custom feature modules.</li>
+        <li>Help in lazy loading features for better performance.</li>
+      </ul>
+    </div>
+
+    <div class="concept">
+      <h3>2. Components</h3>
+      <p>
+        Components control a section of the UI and define the application's logic and view. A component is made up of:
+      </p>
+      <ul>
+        <li><strong>HTML Template:</strong> Defines the UI structure.</li>
+        <li><strong>TypeScript Class:</strong> Contains the logic and data for the template.</li>
+        <li><strong>CSS Styles:</strong> Provides styling for the template.</li>
+      </ul>
+    </div>
+
+    <div class="concept">
+      <h3>3. Templates</h3>
+      <p>
+        Templates are written in HTML and define how the component should be rendered on the screen. Angular 
+        templates can include:
+      </p>
+      <ul>
+        <li>HTML code.</li>
+        <li>Angular directives like `*ngIf`, `*ngFor` for conditional rendering and loops.</li>
+        <li>Data binding to dynamically display or update content.</li>
+      </ul>
+    </div>
+
+    <div class="concept">
+      <h3>4. Data Binding</h3>
+      <p>
+        Angular provides data binding to synchronize the view (HTML) and model (TypeScript logic). It can be 
+        one-way or two-way:
+      </p>
+      <ul>
+        <li><strong>Interpolation:</strong> ` data ` for displaying dynamic data.</li>
+        <li><strong>Property Binding:</strong> `[property]="data"` to bind properties.</li>
+        <li><strong>Event Binding:</strong> `(event)="method()"` to handle events like clicks.</li>
+        <li><strong>Two-Way Binding:</strong> `[(ngModel)]="data"` for real-time updates.</li>
+      </ul>
+    </div>
+
+    <div class="concept">
+      <h3>5. Services and Dependency Injection</h3>
+      <p>
+        Services are used to share logic or data between different parts of the application. Dependency injection 
+        (DI) allows components to access these services efficiently.
+      </p>
+      <ul>
+        <li>Inject a service using the component's constructor.</li>
+        <li>Define shared logic like API calls, authentication, etc., in services.</li>
+      </ul>
+    </div>
+
+    <div class="concept">
+      <h3>6. Routing</h3>
+      <p>
+        Routing enables navigation between different views or pages in the application. Angular's `RouterModule` 
+        is used to define routes.
+      </p>
+      <ul>
+        <li>Use router-outlet in the template to render views.</li>
+        <li>Define routes in the `app-routing.module.ts` file.</li>
+        <li>Lazy load modules for better performance.</li>
+      </ul>
+    </div>
+
+    <div class="concept">
+      <h3>7. Directives</h3>
+      <p>
+        Directives are used to manipulate the DOM. They can be structural or attribute-based:
+      </p>
+      <ul>
+        <li><strong>Structural Directives:</strong> `*ngIf`, `*ngFor` to change the structure of the DOM.</li>
+        <li><strong>Attribute Directives:</strong> `ngClass`, `ngStyle` to change appearance or behavior.</li>
+      </ul>
+    </div>
+
+    <h2 style="text-align: center;">Explore Angular to Build Dynamic Applications!</h2>
+  </div>
